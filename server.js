@@ -1,11 +1,13 @@
-const express = require('express');
-const http = require('http');
+import express from "express";
+import http from "http";
+import cors from "cors";
+
+import index from "./routes/index.js";
 
 const port = process.env.PORT || 4001;
 
-const index = require('./routes/index');
-
 const app = express();
+app.use(cors());
 app.use(index);
 
 const server = http.createServer(app);
