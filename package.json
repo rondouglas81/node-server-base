@@ -4,13 +4,17 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server"
+    "start": "nodemon server"
   },
   "author": "rondouglas <rondouglas@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
